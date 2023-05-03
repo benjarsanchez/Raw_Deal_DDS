@@ -1,0 +1,235 @@
+/home/rodrigo/Desktop/IIC2113/2023-1/Proyecto/Entrega 2/Enunciado/RawDeal/RawDeal.Tests/bin/Debug/net6.0/CoverletSourceRootsMapping
+/home/rodrigo/Desktop/IIC2113/2023-1/Proyecto/Entrega 2/Enunciado/RawDeal/RawDeal.Tests/bin/Debug/net6.0/RawDeal.deps.json
+/home/rodrigo/Desktop/IIC2113/2023-1/Proyecto/Entrega 2/Enunciado/RawDeal/RawDeal.Tests/bin/Debug/net6.0/RawDeal.runtimeconfig.json
+/home/rodrigo/Desktop/IIC2113/2023-1/Proyecto/Entrega 2/Enunciado/RawDeal/RawDeal.Tests/bin/Debug/net6.0/RawDeal
+/home/rodrigo/Desktop/IIC2113/2023-1/Proyecto/Entrega 2/Enunciado/RawDeal/RawDeal.Tests/bin/Debug/net6.0/Microsoft.TestPlatform.PlatformAbstractions.dll
+/home/rodrigo/Desktop/IIC2113/2023-1/Proyecto/Entrega 2/Enunciado/RawDeal/RawDeal.Tests/bin/Debug/net6.0/xunit.runner.visualstudio.dotnetcore.testadapter.dll
+/home/rodrigo/Desktop/IIC2113/2023-1/Proyecto/Entrega 2/Enunciado/RawDeal/RawDeal.Tests/bin/Debug/net6.0/xunit.runner.reporters.netcoreapp10.dll
+/home/rodrigo/Desktop/IIC2113/2023-1/Proyecto/Entrega 2/Enunciado/RawDeal/RawDeal.Tests/bin/Debug/net6.0/xunit.runner.utility.netcoreapp10.dll
+/home/rodrigo/Desktop/IIC2113/2023-1/Proyecto/Entrega 2/Enunciado/RawDeal/RawDeal.Tests/bin/Debug/net6.0/data/02-InvalidDecks-Tests/1.txt
+/home/rodrigo/Desktop/IIC2113/2023-1/Proyecto/Entrega 2/Enunciado/RawDeal/RawDeal.Tests/bin/Debug/net6.0/data/02-InvalidDecks-Tests/10.txt
+/home/rodrigo/Desktop/IIC2113/2023-1/Proyecto/Entrega 2/Enunciado/RawDeal/RawDeal.Tests/bin/Debug/net6.0/data/02-InvalidDecks-Tests/11.txt
+/home/rodrigo/Desktop/IIC2113/2023-1/Proyecto/Entrega 2/Enunciado/RawDeal/RawDeal.Tests/bin/Debug/net6.0/data/02-InvalidDecks-Tests/2.txt
+/home/rodrigo/Desktop/IIC2113/2023-1/Proyecto/Entrega 2/Enunciado/RawDeal/RawDeal.Tests/bin/Debug/net6.0/data/02-InvalidDecks-Tests/3.txt
+/home/rodrigo/Desktop/IIC2113/2023-1/Proyecto/Entrega 2/Enunciado/RawDeal/RawDeal.Tests/bin/Debug/net6.0/data/02-InvalidDecks-Tests/4.txt
+/home/rodrigo/Desktop/IIC2113/2023-1/Proyecto/Entrega 2/Enunciado/RawDeal/RawDeal.Tests/bin/Debug/net6.0/data/02-InvalidDecks-Tests/5.txt
+/home/rodrigo/Desktop/IIC2113/2023-1/Proyecto/Entrega 2/Enunciado/RawDeal/RawDeal.Tests/bin/Debug/net6.0/data/02-InvalidDecks-Tests/6.txt
+/home/rodrigo/Desktop/IIC2113/2023-1/Proyecto/Entrega 2/Enunciado/RawDeal/RawDeal.Tests/bin/Debug/net6.0/data/02-InvalidDecks-Tests/7.txt
+/home/rodrigo/Desktop/IIC2113/2023-1/Proyecto/Entrega 2/Enunciado/RawDeal/RawDeal.Tests/bin/Debug/net6.0/data/02-InvalidDecks-Tests/8.txt
+/home/rodrigo/Desktop/IIC2113/2023-1/Proyecto/Entrega 2/Enunciado/RawDeal/RawDeal.Tests/bin/Debug/net6.0/data/02-InvalidDecks-Tests/9.txt
+/home/rodrigo/Desktop/IIC2113/2023-1/Proyecto/Entrega 2/Enunciado/RawDeal/RawDeal.Tests/bin/Debug/net6.0/data/02-InvalidDecks/01.txt
+/home/rodrigo/Desktop/IIC2113/2023-1/Proyecto/Entrega 2/Enunciado/RawDeal/RawDeal.Tests/bin/Debug/net6.0/data/02-InvalidDecks/02.txt
+/home/rodrigo/Desktop/IIC2113/2023-1/Proyecto/Entrega 2/Enunciado/RawDeal/RawDeal.Tests/bin/Debug/net6.0/data/02-InvalidDecks/03.txt
+/home/rodrigo/Desktop/IIC2113/2023-1/Proyecto/Entrega 2/Enunciado/RawDeal/RawDeal.Tests/bin/Debug/net6.0/data/02-InvalidDecks/04.txt
+/home/rodrigo/Desktop/IIC2113/2023-1/Proyecto/Entrega 2/Enunciado/RawDeal/RawDeal.Tests/bin/Debug/net6.0/data/02-InvalidDecks/05.txt
+/home/rodrigo/Desktop/IIC2113/2023-1/Proyecto/Entrega 2/Enunciado/RawDeal/RawDeal.Tests/bin/Debug/net6.0/data/02-InvalidDecks/06.txt
+/home/rodrigo/Desktop/IIC2113/2023-1/Proyecto/Entrega 2/Enunciado/RawDeal/RawDeal.Tests/bin/Debug/net6.0/data/02-InvalidDecks/07.txt
+/home/rodrigo/Desktop/IIC2113/2023-1/Proyecto/Entrega 2/Enunciado/RawDeal/RawDeal.Tests/bin/Debug/net6.0/data/02-InvalidDecks/08.txt
+/home/rodrigo/Desktop/IIC2113/2023-1/Proyecto/Entrega 2/Enunciado/RawDeal/RawDeal.Tests/bin/Debug/net6.0/data/02-InvalidDecks/09.txt
+/home/rodrigo/Desktop/IIC2113/2023-1/Proyecto/Entrega 2/Enunciado/RawDeal/RawDeal.Tests/bin/Debug/net6.0/data/02-InvalidDecks/10.txt
+/home/rodrigo/Desktop/IIC2113/2023-1/Proyecto/Entrega 2/Enunciado/RawDeal/RawDeal.Tests/bin/Debug/net6.0/data/02-InvalidDecks/11.txt
+/home/rodrigo/Desktop/IIC2113/2023-1/Proyecto/Entrega 2/Enunciado/RawDeal/RawDeal.Tests/bin/Debug/net6.0/data/02-InvalidDecks/12.txt
+/home/rodrigo/Desktop/IIC2113/2023-1/Proyecto/Entrega 2/Enunciado/RawDeal/RawDeal.Tests/bin/Debug/net6.0/data/04-NoEffects-Tests/1.txt
+/home/rodrigo/Desktop/IIC2113/2023-1/Proyecto/Entrega 2/Enunciado/RawDeal/RawDeal.Tests/bin/Debug/net6.0/data/04-NoEffects-Tests/2.txt
+/home/rodrigo/Desktop/IIC2113/2023-1/Proyecto/Entrega 2/Enunciado/RawDeal/RawDeal.Tests/bin/Debug/net6.0/data/04-NoEffects-Tests/3.txt
+/home/rodrigo/Desktop/IIC2113/2023-1/Proyecto/Entrega 2/Enunciado/RawDeal/RawDeal.Tests/bin/Debug/net6.0/data/04-NoEffects-Tests/4.txt
+/home/rodrigo/Desktop/IIC2113/2023-1/Proyecto/Entrega 2/Enunciado/RawDeal/RawDeal.Tests/bin/Debug/net6.0/data/04-NoEffects-Tests/5.txt
+/home/rodrigo/Desktop/IIC2113/2023-1/Proyecto/Entrega 2/Enunciado/RawDeal/RawDeal.Tests/bin/Debug/net6.0/data/04-NoEffects-Tests/6.txt
+/home/rodrigo/Desktop/IIC2113/2023-1/Proyecto/Entrega 2/Enunciado/RawDeal/RawDeal.Tests/bin/Debug/net6.0/data/04-NoEffects-Tests/7.txt
+/home/rodrigo/Desktop/IIC2113/2023-1/Proyecto/Entrega 2/Enunciado/RawDeal/RawDeal.Tests/bin/Debug/net6.0/data/04-NoEffects/01.txt
+/home/rodrigo/Desktop/IIC2113/2023-1/Proyecto/Entrega 2/Enunciado/RawDeal/RawDeal.Tests/bin/Debug/net6.0/data/04-NoEffects/02.txt
+/home/rodrigo/Desktop/IIC2113/2023-1/Proyecto/Entrega 2/Enunciado/RawDeal/RawDeal.Tests/bin/Debug/net6.0/data/04-NoEffects/03.txt
+/home/rodrigo/Desktop/IIC2113/2023-1/Proyecto/Entrega 2/Enunciado/RawDeal/RawDeal.Tests/bin/Debug/net6.0/data/04-NoEffects/04.txt
+/home/rodrigo/Desktop/IIC2113/2023-1/Proyecto/Entrega 2/Enunciado/RawDeal/RawDeal.Tests/bin/Debug/net6.0/data/04-NoEffects/05.txt
+/home/rodrigo/Desktop/IIC2113/2023-1/Proyecto/Entrega 2/Enunciado/RawDeal/RawDeal.Tests/bin/Debug/net6.0/data/04-NoEffects/06.txt
+/home/rodrigo/Desktop/IIC2113/2023-1/Proyecto/Entrega 2/Enunciado/RawDeal/RawDeal.Tests/bin/Debug/net6.0/data/04-NoEffects/07.txt
+/home/rodrigo/Desktop/IIC2113/2023-1/Proyecto/Entrega 2/Enunciado/RawDeal/RawDeal.Tests/bin/Debug/net6.0/data/04-NoEffects/08.txt
+/home/rodrigo/Desktop/IIC2113/2023-1/Proyecto/Entrega 2/Enunciado/RawDeal/RawDeal.Tests/bin/Debug/net6.0/data/05-SuperstarAbilities-Tests/1.txt
+/home/rodrigo/Desktop/IIC2113/2023-1/Proyecto/Entrega 2/Enunciado/RawDeal/RawDeal.Tests/bin/Debug/net6.0/data/05-SuperstarAbilities-Tests/10.txt
+/home/rodrigo/Desktop/IIC2113/2023-1/Proyecto/Entrega 2/Enunciado/RawDeal/RawDeal.Tests/bin/Debug/net6.0/data/05-SuperstarAbilities-Tests/11.txt
+/home/rodrigo/Desktop/IIC2113/2023-1/Proyecto/Entrega 2/Enunciado/RawDeal/RawDeal.Tests/bin/Debug/net6.0/data/05-SuperstarAbilities-Tests/12.txt
+/home/rodrigo/Desktop/IIC2113/2023-1/Proyecto/Entrega 2/Enunciado/RawDeal/RawDeal.Tests/bin/Debug/net6.0/data/05-SuperstarAbilities-Tests/13.txt
+/home/rodrigo/Desktop/IIC2113/2023-1/Proyecto/Entrega 2/Enunciado/RawDeal/RawDeal.Tests/bin/Debug/net6.0/data/05-SuperstarAbilities-Tests/2.txt
+/home/rodrigo/Desktop/IIC2113/2023-1/Proyecto/Entrega 2/Enunciado/RawDeal/RawDeal.Tests/bin/Debug/net6.0/data/05-SuperstarAbilities-Tests/3.txt
+/home/rodrigo/Desktop/IIC2113/2023-1/Proyecto/Entrega 2/Enunciado/RawDeal/RawDeal.Tests/bin/Debug/net6.0/data/05-SuperstarAbilities-Tests/4.txt
+/home/rodrigo/Desktop/IIC2113/2023-1/Proyecto/Entrega 2/Enunciado/RawDeal/RawDeal.Tests/bin/Debug/net6.0/data/05-SuperstarAbilities-Tests/5.txt
+/home/rodrigo/Desktop/IIC2113/2023-1/Proyecto/Entrega 2/Enunciado/RawDeal/RawDeal.Tests/bin/Debug/net6.0/data/05-SuperstarAbilities-Tests/6.txt
+/home/rodrigo/Desktop/IIC2113/2023-1/Proyecto/Entrega 2/Enunciado/RawDeal/RawDeal.Tests/bin/Debug/net6.0/data/05-SuperstarAbilities-Tests/7.txt
+/home/rodrigo/Desktop/IIC2113/2023-1/Proyecto/Entrega 2/Enunciado/RawDeal/RawDeal.Tests/bin/Debug/net6.0/data/05-SuperstarAbilities-Tests/8.txt
+/home/rodrigo/Desktop/IIC2113/2023-1/Proyecto/Entrega 2/Enunciado/RawDeal/RawDeal.Tests/bin/Debug/net6.0/data/05-SuperstarAbilities-Tests/9.txt
+/home/rodrigo/Desktop/IIC2113/2023-1/Proyecto/Entrega 2/Enunciado/RawDeal/RawDeal.Tests/bin/Debug/net6.0/data/05-SuperstarAbilities/01_Kane.txt
+/home/rodrigo/Desktop/IIC2113/2023-1/Proyecto/Entrega 2/Enunciado/RawDeal/RawDeal.Tests/bin/Debug/net6.0/data/05-SuperstarAbilities/02_HHH.txt
+/home/rodrigo/Desktop/IIC2113/2023-1/Proyecto/Entrega 2/Enunciado/RawDeal/RawDeal.Tests/bin/Debug/net6.0/data/05-SuperstarAbilities/03_Jericho.txt
+/home/rodrigo/Desktop/IIC2113/2023-1/Proyecto/Entrega 2/Enunciado/RawDeal/RawDeal.Tests/bin/Debug/net6.0/data/05-SuperstarAbilities/04_Mankind.txt
+/home/rodrigo/Desktop/IIC2113/2023-1/Proyecto/Entrega 2/Enunciado/RawDeal/RawDeal.Tests/bin/Debug/net6.0/data/05-SuperstarAbilities/05_StoneCold.txt
+/home/rodrigo/Desktop/IIC2113/2023-1/Proyecto/Entrega 2/Enunciado/RawDeal/RawDeal.Tests/bin/Debug/net6.0/data/05-SuperstarAbilities/06_TheRock.txt
+/home/rodrigo/Desktop/IIC2113/2023-1/Proyecto/Entrega 2/Enunciado/RawDeal/RawDeal.Tests/bin/Debug/net6.0/data/05-SuperstarAbilities/07_Undertaker.txt
+/home/rodrigo/Desktop/IIC2113/2023-1/Proyecto/Entrega 2/Enunciado/RawDeal/RawDeal.Tests/bin/Debug/net6.0/data/05-SuperstarAbilities/08_HHH.txt
+/home/rodrigo/Desktop/IIC2113/2023-1/Proyecto/Entrega 2/Enunciado/RawDeal/RawDeal.Tests/bin/Debug/net6.0/data/05-SuperstarAbilities/09_Jericho.txt
+/home/rodrigo/Desktop/IIC2113/2023-1/Proyecto/Entrega 2/Enunciado/RawDeal/RawDeal.Tests/bin/Debug/net6.0/data/05-SuperstarAbilities/10_Kane.txt
+/home/rodrigo/Desktop/IIC2113/2023-1/Proyecto/Entrega 2/Enunciado/RawDeal/RawDeal.Tests/bin/Debug/net6.0/data/05-SuperstarAbilities/11_Mankind.txt
+/home/rodrigo/Desktop/IIC2113/2023-1/Proyecto/Entrega 2/Enunciado/RawDeal/RawDeal.Tests/bin/Debug/net6.0/data/05-SuperstarAbilities/12_StoneCold.txt
+/home/rodrigo/Desktop/IIC2113/2023-1/Proyecto/Entrega 2/Enunciado/RawDeal/RawDeal.Tests/bin/Debug/net6.0/data/05-SuperstarAbilities/13_Undertaker.txt
+/home/rodrigo/Desktop/IIC2113/2023-1/Proyecto/Entrega 2/Enunciado/RawDeal/RawDeal.Tests/bin/Debug/net6.0/data/05-SuperstarAbilities/14_TheRock.txt
+/home/rodrigo/Desktop/IIC2113/2023-1/Proyecto/Entrega 2/Enunciado/RawDeal/RawDeal.Tests/bin/Debug/net6.0/data/cards.json
+/home/rodrigo/Desktop/IIC2113/2023-1/Proyecto/Entrega 2/Enunciado/RawDeal/RawDeal.Tests/bin/Debug/net6.0/data/superstar.json
+/home/rodrigo/Desktop/IIC2113/2023-1/Proyecto/Entrega 2/Enunciado/RawDeal/RawDeal.Tests/bin/Debug/net6.0/RawDeal.Tests.deps.json
+/home/rodrigo/Desktop/IIC2113/2023-1/Proyecto/Entrega 2/Enunciado/RawDeal/RawDeal.Tests/bin/Debug/net6.0/RawDeal.Tests.runtimeconfig.json
+/home/rodrigo/Desktop/IIC2113/2023-1/Proyecto/Entrega 2/Enunciado/RawDeal/RawDeal.Tests/bin/Debug/net6.0/RawDeal.Tests.dll
+/home/rodrigo/Desktop/IIC2113/2023-1/Proyecto/Entrega 2/Enunciado/RawDeal/RawDeal.Tests/bin/Debug/net6.0/ref/RawDeal.Tests.dll
+/home/rodrigo/Desktop/IIC2113/2023-1/Proyecto/Entrega 2/Enunciado/RawDeal/RawDeal.Tests/bin/Debug/net6.0/RawDeal.Tests.pdb
+/home/rodrigo/Desktop/IIC2113/2023-1/Proyecto/Entrega 2/Enunciado/RawDeal/RawDeal.Tests/bin/Debug/net6.0/Microsoft.VisualStudio.CodeCoverage.Shim.dll
+/home/rodrigo/Desktop/IIC2113/2023-1/Proyecto/Entrega 2/Enunciado/RawDeal/RawDeal.Tests/bin/Debug/net6.0/Microsoft.TestPlatform.CoreUtilities.dll
+/home/rodrigo/Desktop/IIC2113/2023-1/Proyecto/Entrega 2/Enunciado/RawDeal/RawDeal.Tests/bin/Debug/net6.0/Microsoft.VisualStudio.TestPlatform.ObjectModel.dll
+/home/rodrigo/Desktop/IIC2113/2023-1/Proyecto/Entrega 2/Enunciado/RawDeal/RawDeal.Tests/bin/Debug/net6.0/Microsoft.TestPlatform.CommunicationUtilities.dll
+/home/rodrigo/Desktop/IIC2113/2023-1/Proyecto/Entrega 2/Enunciado/RawDeal/RawDeal.Tests/bin/Debug/net6.0/Microsoft.TestPlatform.CrossPlatEngine.dll
+/home/rodrigo/Desktop/IIC2113/2023-1/Proyecto/Entrega 2/Enunciado/RawDeal/RawDeal.Tests/bin/Debug/net6.0/Microsoft.TestPlatform.Utilities.dll
+/home/rodrigo/Desktop/IIC2113/2023-1/Proyecto/Entrega 2/Enunciado/RawDeal/RawDeal.Tests/bin/Debug/net6.0/Microsoft.VisualStudio.TestPlatform.Common.dll
+/home/rodrigo/Desktop/IIC2113/2023-1/Proyecto/Entrega 2/Enunciado/RawDeal/RawDeal.Tests/bin/Debug/net6.0/testhost.dll
+/home/rodrigo/Desktop/IIC2113/2023-1/Proyecto/Entrega 2/Enunciado/RawDeal/RawDeal.Tests/bin/Debug/net6.0/Newtonsoft.Json.dll
+/home/rodrigo/Desktop/IIC2113/2023-1/Proyecto/Entrega 2/Enunciado/RawDeal/RawDeal.Tests/bin/Debug/net6.0/NuGet.Frameworks.dll
+/home/rodrigo/Desktop/IIC2113/2023-1/Proyecto/Entrega 2/Enunciado/RawDeal/RawDeal.Tests/bin/Debug/net6.0/xunit.abstractions.dll
+/home/rodrigo/Desktop/IIC2113/2023-1/Proyecto/Entrega 2/Enunciado/RawDeal/RawDeal.Tests/bin/Debug/net6.0/xunit.assert.dll
+/home/rodrigo/Desktop/IIC2113/2023-1/Proyecto/Entrega 2/Enunciado/RawDeal/RawDeal.Tests/bin/Debug/net6.0/xunit.core.dll
+/home/rodrigo/Desktop/IIC2113/2023-1/Proyecto/Entrega 2/Enunciado/RawDeal/RawDeal.Tests/bin/Debug/net6.0/xunit.execution.dotnet.dll
+/home/rodrigo/Desktop/IIC2113/2023-1/Proyecto/Entrega 2/Enunciado/RawDeal/RawDeal.Tests/bin/Debug/net6.0/cs/Microsoft.TestPlatform.CoreUtilities.resources.dll
+/home/rodrigo/Desktop/IIC2113/2023-1/Proyecto/Entrega 2/Enunciado/RawDeal/RawDeal.Tests/bin/Debug/net6.0/cs/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+/home/rodrigo/Desktop/IIC2113/2023-1/Proyecto/Entrega 2/Enunciado/RawDeal/RawDeal.Tests/bin/Debug/net6.0/de/Microsoft.TestPlatform.CoreUtilities.resources.dll
+/home/rodrigo/Desktop/IIC2113/2023-1/Proyecto/Entrega 2/Enunciado/RawDeal/RawDeal.Tests/bin/Debug/net6.0/de/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+/home/rodrigo/Desktop/IIC2113/2023-1/Proyecto/Entrega 2/Enunciado/RawDeal/RawDeal.Tests/bin/Debug/net6.0/es/Microsoft.TestPlatform.CoreUtilities.resources.dll
+/home/rodrigo/Desktop/IIC2113/2023-1/Proyecto/Entrega 2/Enunciado/RawDeal/RawDeal.Tests/bin/Debug/net6.0/es/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+/home/rodrigo/Desktop/IIC2113/2023-1/Proyecto/Entrega 2/Enunciado/RawDeal/RawDeal.Tests/bin/Debug/net6.0/fr/Microsoft.TestPlatform.CoreUtilities.resources.dll
+/home/rodrigo/Desktop/IIC2113/2023-1/Proyecto/Entrega 2/Enunciado/RawDeal/RawDeal.Tests/bin/Debug/net6.0/fr/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+/home/rodrigo/Desktop/IIC2113/2023-1/Proyecto/Entrega 2/Enunciado/RawDeal/RawDeal.Tests/bin/Debug/net6.0/it/Microsoft.TestPlatform.CoreUtilities.resources.dll
+/home/rodrigo/Desktop/IIC2113/2023-1/Proyecto/Entrega 2/Enunciado/RawDeal/RawDeal.Tests/bin/Debug/net6.0/it/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+/home/rodrigo/Desktop/IIC2113/2023-1/Proyecto/Entrega 2/Enunciado/RawDeal/RawDeal.Tests/bin/Debug/net6.0/ja/Microsoft.TestPlatform.CoreUtilities.resources.dll
+/home/rodrigo/Desktop/IIC2113/2023-1/Proyecto/Entrega 2/Enunciado/RawDeal/RawDeal.Tests/bin/Debug/net6.0/ja/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+/home/rodrigo/Desktop/IIC2113/2023-1/Proyecto/Entrega 2/Enunciado/RawDeal/RawDeal.Tests/bin/Debug/net6.0/ko/Microsoft.TestPlatform.CoreUtilities.resources.dll
+/home/rodrigo/Desktop/IIC2113/2023-1/Proyecto/Entrega 2/Enunciado/RawDeal/RawDeal.Tests/bin/Debug/net6.0/ko/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+/home/rodrigo/Desktop/IIC2113/2023-1/Proyecto/Entrega 2/Enunciado/RawDeal/RawDeal.Tests/bin/Debug/net6.0/pl/Microsoft.TestPlatform.CoreUtilities.resources.dll
+/home/rodrigo/Desktop/IIC2113/2023-1/Proyecto/Entrega 2/Enunciado/RawDeal/RawDeal.Tests/bin/Debug/net6.0/pl/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+/home/rodrigo/Desktop/IIC2113/2023-1/Proyecto/Entrega 2/Enunciado/RawDeal/RawDeal.Tests/bin/Debug/net6.0/pt-BR/Microsoft.TestPlatform.CoreUtilities.resources.dll
+/home/rodrigo/Desktop/IIC2113/2023-1/Proyecto/Entrega 2/Enunciado/RawDeal/RawDeal.Tests/bin/Debug/net6.0/pt-BR/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+/home/rodrigo/Desktop/IIC2113/2023-1/Proyecto/Entrega 2/Enunciado/RawDeal/RawDeal.Tests/bin/Debug/net6.0/ru/Microsoft.TestPlatform.CoreUtilities.resources.dll
+/home/rodrigo/Desktop/IIC2113/2023-1/Proyecto/Entrega 2/Enunciado/RawDeal/RawDeal.Tests/bin/Debug/net6.0/ru/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+/home/rodrigo/Desktop/IIC2113/2023-1/Proyecto/Entrega 2/Enunciado/RawDeal/RawDeal.Tests/bin/Debug/net6.0/tr/Microsoft.TestPlatform.CoreUtilities.resources.dll
+/home/rodrigo/Desktop/IIC2113/2023-1/Proyecto/Entrega 2/Enunciado/RawDeal/RawDeal.Tests/bin/Debug/net6.0/tr/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+/home/rodrigo/Desktop/IIC2113/2023-1/Proyecto/Entrega 2/Enunciado/RawDeal/RawDeal.Tests/bin/Debug/net6.0/zh-Hans/Microsoft.TestPlatform.CoreUtilities.resources.dll
+/home/rodrigo/Desktop/IIC2113/2023-1/Proyecto/Entrega 2/Enunciado/RawDeal/RawDeal.Tests/bin/Debug/net6.0/zh-Hans/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+/home/rodrigo/Desktop/IIC2113/2023-1/Proyecto/Entrega 2/Enunciado/RawDeal/RawDeal.Tests/bin/Debug/net6.0/zh-Hant/Microsoft.TestPlatform.CoreUtilities.resources.dll
+/home/rodrigo/Desktop/IIC2113/2023-1/Proyecto/Entrega 2/Enunciado/RawDeal/RawDeal.Tests/bin/Debug/net6.0/zh-Hant/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+/home/rodrigo/Desktop/IIC2113/2023-1/Proyecto/Entrega 2/Enunciado/RawDeal/RawDeal.Tests/bin/Debug/net6.0/cs/Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+/home/rodrigo/Desktop/IIC2113/2023-1/Proyecto/Entrega 2/Enunciado/RawDeal/RawDeal.Tests/bin/Debug/net6.0/cs/Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+/home/rodrigo/Desktop/IIC2113/2023-1/Proyecto/Entrega 2/Enunciado/RawDeal/RawDeal.Tests/bin/Debug/net6.0/cs/Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+/home/rodrigo/Desktop/IIC2113/2023-1/Proyecto/Entrega 2/Enunciado/RawDeal/RawDeal.Tests/bin/Debug/net6.0/de/Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+/home/rodrigo/Desktop/IIC2113/2023-1/Proyecto/Entrega 2/Enunciado/RawDeal/RawDeal.Tests/bin/Debug/net6.0/de/Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+/home/rodrigo/Desktop/IIC2113/2023-1/Proyecto/Entrega 2/Enunciado/RawDeal/RawDeal.Tests/bin/Debug/net6.0/de/Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+/home/rodrigo/Desktop/IIC2113/2023-1/Proyecto/Entrega 2/Enunciado/RawDeal/RawDeal.Tests/bin/Debug/net6.0/es/Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+/home/rodrigo/Desktop/IIC2113/2023-1/Proyecto/Entrega 2/Enunciado/RawDeal/RawDeal.Tests/bin/Debug/net6.0/es/Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+/home/rodrigo/Desktop/IIC2113/2023-1/Proyecto/Entrega 2/Enunciado/RawDeal/RawDeal.Tests/bin/Debug/net6.0/es/Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+/home/rodrigo/Desktop/IIC2113/2023-1/Proyecto/Entrega 2/Enunciado/RawDeal/RawDeal.Tests/bin/Debug/net6.0/fr/Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+/home/rodrigo/Desktop/IIC2113/2023-1/Proyecto/Entrega 2/Enunciado/RawDeal/RawDeal.Tests/bin/Debug/net6.0/fr/Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+/home/rodrigo/Desktop/IIC2113/2023-1/Proyecto/Entrega 2/Enunciado/RawDeal/RawDeal.Tests/bin/Debug/net6.0/fr/Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+/home/rodrigo/Desktop/IIC2113/2023-1/Proyecto/Entrega 2/Enunciado/RawDeal/RawDeal.Tests/bin/Debug/net6.0/it/Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+/home/rodrigo/Desktop/IIC2113/2023-1/Proyecto/Entrega 2/Enunciado/RawDeal/RawDeal.Tests/bin/Debug/net6.0/it/Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+/home/rodrigo/Desktop/IIC2113/2023-1/Proyecto/Entrega 2/Enunciado/RawDeal/RawDeal.Tests/bin/Debug/net6.0/it/Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+/home/rodrigo/Desktop/IIC2113/2023-1/Proyecto/Entrega 2/Enunciado/RawDeal/RawDeal.Tests/bin/Debug/net6.0/ja/Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+/home/rodrigo/Desktop/IIC2113/2023-1/Proyecto/Entrega 2/Enunciado/RawDeal/RawDeal.Tests/bin/Debug/net6.0/ja/Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+/home/rodrigo/Desktop/IIC2113/2023-1/Proyecto/Entrega 2/Enunciado/RawDeal/RawDeal.Tests/bin/Debug/net6.0/ja/Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+/home/rodrigo/Desktop/IIC2113/2023-1/Proyecto/Entrega 2/Enunciado/RawDeal/RawDeal.Tests/bin/Debug/net6.0/ko/Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+/home/rodrigo/Desktop/IIC2113/2023-1/Proyecto/Entrega 2/Enunciado/RawDeal/RawDeal.Tests/bin/Debug/net6.0/ko/Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+/home/rodrigo/Desktop/IIC2113/2023-1/Proyecto/Entrega 2/Enunciado/RawDeal/RawDeal.Tests/bin/Debug/net6.0/ko/Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+/home/rodrigo/Desktop/IIC2113/2023-1/Proyecto/Entrega 2/Enunciado/RawDeal/RawDeal.Tests/bin/Debug/net6.0/pl/Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+/home/rodrigo/Desktop/IIC2113/2023-1/Proyecto/Entrega 2/Enunciado/RawDeal/RawDeal.Tests/bin/Debug/net6.0/pl/Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+/home/rodrigo/Desktop/IIC2113/2023-1/Proyecto/Entrega 2/Enunciado/RawDeal/RawDeal.Tests/bin/Debug/net6.0/pl/Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+/home/rodrigo/Desktop/IIC2113/2023-1/Proyecto/Entrega 2/Enunciado/RawDeal/RawDeal.Tests/bin/Debug/net6.0/pt-BR/Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+/home/rodrigo/Desktop/IIC2113/2023-1/Proyecto/Entrega 2/Enunciado/RawDeal/RawDeal.Tests/bin/Debug/net6.0/pt-BR/Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+/home/rodrigo/Desktop/IIC2113/2023-1/Proyecto/Entrega 2/Enunciado/RawDeal/RawDeal.Tests/bin/Debug/net6.0/pt-BR/Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+/home/rodrigo/Desktop/IIC2113/2023-1/Proyecto/Entrega 2/Enunciado/RawDeal/RawDeal.Tests/bin/Debug/net6.0/ru/Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+/home/rodrigo/Desktop/IIC2113/2023-1/Proyecto/Entrega 2/Enunciado/RawDeal/RawDeal.Tests/bin/Debug/net6.0/ru/Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+/home/rodrigo/Desktop/IIC2113/2023-1/Proyecto/Entrega 2/Enunciado/RawDeal/RawDeal.Tests/bin/Debug/net6.0/ru/Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+/home/rodrigo/Desktop/IIC2113/2023-1/Proyecto/Entrega 2/Enunciado/RawDeal/RawDeal.Tests/bin/Debug/net6.0/tr/Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+/home/rodrigo/Desktop/IIC2113/2023-1/Proyecto/Entrega 2/Enunciado/RawDeal/RawDeal.Tests/bin/Debug/net6.0/tr/Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+/home/rodrigo/Desktop/IIC2113/2023-1/Proyecto/Entrega 2/Enunciado/RawDeal/RawDeal.Tests/bin/Debug/net6.0/tr/Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+/home/rodrigo/Desktop/IIC2113/2023-1/Proyecto/Entrega 2/Enunciado/RawDeal/RawDeal.Tests/bin/Debug/net6.0/zh-Hans/Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+/home/rodrigo/Desktop/IIC2113/2023-1/Proyecto/Entrega 2/Enunciado/RawDeal/RawDeal.Tests/bin/Debug/net6.0/zh-Hans/Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+/home/rodrigo/Desktop/IIC2113/2023-1/Proyecto/Entrega 2/Enunciado/RawDeal/RawDeal.Tests/bin/Debug/net6.0/zh-Hans/Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+/home/rodrigo/Desktop/IIC2113/2023-1/Proyecto/Entrega 2/Enunciado/RawDeal/RawDeal.Tests/bin/Debug/net6.0/zh-Hant/Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+/home/rodrigo/Desktop/IIC2113/2023-1/Proyecto/Entrega 2/Enunciado/RawDeal/RawDeal.Tests/bin/Debug/net6.0/zh-Hant/Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+/home/rodrigo/Desktop/IIC2113/2023-1/Proyecto/Entrega 2/Enunciado/RawDeal/RawDeal.Tests/bin/Debug/net6.0/zh-Hant/Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+/home/rodrigo/Desktop/IIC2113/2023-1/Proyecto/Entrega 2/Enunciado/RawDeal/RawDeal.Tests/bin/Debug/net6.0/RawDeal.dll
+/home/rodrigo/Desktop/IIC2113/2023-1/Proyecto/Entrega 2/Enunciado/RawDeal/RawDeal.Tests/bin/Debug/net6.0/RawDealView.dll
+/home/rodrigo/Desktop/IIC2113/2023-1/Proyecto/Entrega 2/Enunciado/RawDeal/RawDeal.Tests/bin/Debug/net6.0/RawDealView.pdb
+/home/rodrigo/Desktop/IIC2113/2023-1/Proyecto/Entrega 2/Enunciado/RawDeal/RawDeal.Tests/bin/Debug/net6.0/RawDeal.pdb
+/home/rodrigo/Desktop/IIC2113/2023-1/Proyecto/Entrega 2/Enunciado/RawDeal/RawDeal.Tests/obj/Debug/net6.0/RawDeal.Tests.csproj.AssemblyReference.cache
+/home/rodrigo/Desktop/IIC2113/2023-1/Proyecto/Entrega 2/Enunciado/RawDeal/RawDeal.Tests/obj/Debug/net6.0/RawDeal.Tests.GeneratedMSBuildEditorConfig.editorconfig
+/home/rodrigo/Desktop/IIC2113/2023-1/Proyecto/Entrega 2/Enunciado/RawDeal/RawDeal.Tests/obj/Debug/net6.0/RawDeal.Tests.AssemblyInfoInputs.cache
+/home/rodrigo/Desktop/IIC2113/2023-1/Proyecto/Entrega 2/Enunciado/RawDeal/RawDeal.Tests/obj/Debug/net6.0/RawDeal.Tests.AssemblyInfo.cs
+/home/rodrigo/Desktop/IIC2113/2023-1/Proyecto/Entrega 2/Enunciado/RawDeal/RawDeal.Tests/obj/Debug/net6.0/RawDeal.Tests.csproj.CoreCompileInputs.cache
+/home/rodrigo/Desktop/IIC2113/2023-1/Proyecto/Entrega 2/Enunciado/RawDeal/RawDeal.Tests/obj/Debug/net6.0/RawDeal.Tests.csproj.CopyComplete
+/home/rodrigo/Desktop/IIC2113/2023-1/Proyecto/Entrega 2/Enunciado/RawDeal/RawDeal.Tests/obj/Debug/net6.0/RawDeal.Tests.dll
+/home/rodrigo/Desktop/IIC2113/2023-1/Proyecto/Entrega 2/Enunciado/RawDeal/RawDeal.Tests/obj/Debug/net6.0/ref/RawDeal.Tests.dll
+/home/rodrigo/Desktop/IIC2113/2023-1/Proyecto/Entrega 2/Enunciado/RawDeal/RawDeal.Tests/obj/Debug/net6.0/RawDeal.Tests.pdb
+/home/rodrigo/Desktop/IIC2113/2023-1/Proyecto/Entrega 2/Enunciado/RawDeal/RawDeal.Tests/obj/Debug/net6.0/RawDeal.Tests.genruntimeconfig.cache
+/home/rodrigo/Desktop/IIC2113/2023-1/Proyecto/Entrega 2/Enunciado/RawDeal/RawDeal.Tests/bin/Debug/net6.0/data/superstar2.json
+/home/rodrigo/Desktop/IIC2113/2023-1/Proyecto/Entrega 2/Enunciado/RawDeal/RawDeal.Tests/bin/Debug/net6.0/data/05-SuperstarAbilities-Tests/14.txt
+/home/rodrigo/Desktop/IIC2113/2023-1/Proyecto/Entrega 2/Enunciado/RawDeal/RawDeal.Tests/bin/Debug/net6.0/data/05-SuperstarAbilities-Tests/15.txt
+/Users/benjarsanchez/Desktop/Semestre 9/Diseño Detallado de Software/Proyecto/E2/RawDeal/RawDeal.Tests/bin/Debug/net6.0/CoverletSourceRootsMapping
+/Users/benjarsanchez/Desktop/Semestre 9/Diseño Detallado de Software/Proyecto/E2/RawDeal/RawDeal.Tests/bin/Debug/net6.0/xunit.runner.visualstudio.dotnetcore.testadapter.dll
+/Users/benjarsanchez/Desktop/Semestre 9/Diseño Detallado de Software/Proyecto/E2/RawDeal/RawDeal.Tests/bin/Debug/net6.0/xunit.runner.reporters.netcoreapp10.dll
+/Users/benjarsanchez/Desktop/Semestre 9/Diseño Detallado de Software/Proyecto/E2/RawDeal/RawDeal.Tests/bin/Debug/net6.0/xunit.runner.utility.netcoreapp10.dll
+/Users/benjarsanchez/Desktop/Semestre 9/Diseño Detallado de Software/Proyecto/E2/RawDeal/RawDeal.Tests/bin/Debug/net6.0/RawDeal.deps.json
+/Users/benjarsanchez/Desktop/Semestre 9/Diseño Detallado de Software/Proyecto/E2/RawDeal/RawDeal.Tests/bin/Debug/net6.0/RawDeal.runtimeconfig.json
+/Users/benjarsanchez/Desktop/Semestre 9/Diseño Detallado de Software/Proyecto/E2/RawDeal/RawDeal.Tests/bin/Debug/net6.0/RawDeal
+/Users/benjarsanchez/Desktop/Semestre 9/Diseño Detallado de Software/Proyecto/E2/RawDeal/RawDeal.Tests/bin/Debug/net6.0/Microsoft.TestPlatform.PlatformAbstractions.dll
+/Users/benjarsanchez/Desktop/Semestre 9/Diseño Detallado de Software/Proyecto/E2/RawDeal/RawDeal.Tests/bin/Debug/net6.0/1.txt
+/Users/benjarsanchez/Desktop/Semestre 9/Diseño Detallado de Software/Proyecto/E2/RawDeal/RawDeal.Tests/bin/Debug/net6.0/10.txt
+/Users/benjarsanchez/Desktop/Semestre 9/Diseño Detallado de Software/Proyecto/E2/RawDeal/RawDeal.Tests/bin/Debug/net6.0/11.txt
+/Users/benjarsanchez/Desktop/Semestre 9/Diseño Detallado de Software/Proyecto/E2/RawDeal/RawDeal.Tests/bin/Debug/net6.0/2.txt
+/Users/benjarsanchez/Desktop/Semestre 9/Diseño Detallado de Software/Proyecto/E2/RawDeal/RawDeal.Tests/bin/Debug/net6.0/3.txt
+/Users/benjarsanchez/Desktop/Semestre 9/Diseño Detallado de Software/Proyecto/E2/RawDeal/RawDeal.Tests/bin/Debug/net6.0/4.txt
+/Users/benjarsanchez/Desktop/Semestre 9/Diseño Detallado de Software/Proyecto/E2/RawDeal/RawDeal.Tests/bin/Debug/net6.0/5.txt
+/Users/benjarsanchez/Desktop/Semestre 9/Diseño Detallado de Software/Proyecto/E2/RawDeal/RawDeal.Tests/bin/Debug/net6.0/6.txt
+/Users/benjarsanchez/Desktop/Semestre 9/Diseño Detallado de Software/Proyecto/E2/RawDeal/RawDeal.Tests/bin/Debug/net6.0/7.txt
+/Users/benjarsanchez/Desktop/Semestre 9/Diseño Detallado de Software/Proyecto/E2/RawDeal/RawDeal.Tests/bin/Debug/net6.0/8.txt
+/Users/benjarsanchez/Desktop/Semestre 9/Diseño Detallado de Software/Proyecto/E2/RawDeal/RawDeal.Tests/bin/Debug/net6.0/9.txt
+/Users/benjarsanchez/Desktop/Semestre 9/Diseño Detallado de Software/Proyecto/E2/RawDeal/RawDeal.Tests/bin/Debug/net6.0/01.txt
+/Users/benjarsanchez/Desktop/Semestre 9/Diseño Detallado de Software/Proyecto/E2/RawDeal/RawDeal.Tests/bin/Debug/net6.0/02.txt
+/Users/benjarsanchez/Desktop/Semestre 9/Diseño Detallado de Software/Proyecto/E2/RawDeal/RawDeal.Tests/bin/Debug/net6.0/03.txt
+/Users/benjarsanchez/Desktop/Semestre 9/Diseño Detallado de Software/Proyecto/E2/RawDeal/RawDeal.Tests/bin/Debug/net6.0/04.txt
+/Users/benjarsanchez/Desktop/Semestre 9/Diseño Detallado de Software/Proyecto/E2/RawDeal/RawDeal.Tests/bin/Debug/net6.0/05.txt
+/Users/benjarsanchez/Desktop/Semestre 9/Diseño Detallado de Software/Proyecto/E2/RawDeal/RawDeal.Tests/bin/Debug/net6.0/06.txt
+/Users/benjarsanchez/Desktop/Semestre 9/Diseño Detallado de Software/Proyecto/E2/RawDeal/RawDeal.Tests/bin/Debug/net6.0/07.txt
+/Users/benjarsanchez/Desktop/Semestre 9/Diseño Detallado de Software/Proyecto/E2/RawDeal/RawDeal.Tests/bin/Debug/net6.0/08.txt
+/Users/benjarsanchez/Desktop/Semestre 9/Diseño Detallado de Software/Proyecto/E2/RawDeal/RawDeal.Tests/bin/Debug/net6.0/09.txt
+/Users/benjarsanchez/Desktop/Semestre 9/Diseño Detallado de Software/Proyecto/E2/RawDeal/RawDeal.Tests/bin/Debug/net6.0/12.txt
+/Users/benjarsanchez/Desktop/Semestre 9/Diseño Detallado de Software/Proyecto/E2/RawDeal/RawDeal.Tests/bin/Debug/net6.0/13.txt
+/Users/benjarsanchez/Desktop/Semestre 9/Diseño Detallado de Software/Proyecto/E2/RawDeal/RawDeal.Tests/bin/Debug/net6.0/14.txt
+/Users/benjarsanchez/Desktop/Semestre 9/Diseño Detallado de Software/Proyecto/E2/RawDeal/RawDeal.Tests/bin/Debug/net6.0/15.txt
+/Users/benjarsanchez/Desktop/Semestre 9/Diseño Detallado de Software/Proyecto/E2/RawDeal/RawDeal.Tests/bin/Debug/net6.0/01_Kane.txt
+/Users/benjarsanchez/Desktop/Semestre 9/Diseño Detallado de Software/Proyecto/E2/RawDeal/RawDeal.Tests/bin/Debug/net6.0/02_HHH.txt
+/Users/benjarsanchez/Desktop/Semestre 9/Diseño Detallado de Software/Proyecto/E2/RawDeal/RawDeal.Tests/bin/Debug/net6.0/03_Jericho.txt
+/Users/benjarsanchez/Desktop/Semestre 9/Diseño Detallado de Software/Proyecto/E2/RawDeal/RawDeal.Tests/bin/Debug/net6.0/04_Mankind.txt
+/Users/benjarsanchez/Desktop/Semestre 9/Diseño Detallado de Software/Proyecto/E2/RawDeal/RawDeal.Tests/bin/Debug/net6.0/05_StoneCold.txt
+/Users/benjarsanchez/Desktop/Semestre 9/Diseño Detallado de Software/Proyecto/E2/RawDeal/RawDeal.Tests/bin/Debug/net6.0/06_TheRock.txt
+/Users/benjarsanchez/Desktop/Semestre 9/Diseño Detallado de Software/Proyecto/E2/RawDeal/RawDeal.Tests/bin/Debug/net6.0/07_Undertaker.txt
+/Users/benjarsanchez/Desktop/Semestre 9/Diseño Detallado de Software/Proyecto/E2/RawDeal/RawDeal.Tests/bin/Debug/net6.0/08_HHH.txt
+/Users/benjarsanchez/Desktop/Semestre 9/Diseño Detallado de Software/Proyecto/E2/RawDeal/RawDeal.Tests/bin/Debug/net6.0/09_Jericho.txt
+/Users/benjarsanchez/Desktop/Semestre 9/Diseño Detallado de Software/Proyecto/E2/RawDeal/RawDeal.Tests/bin/Debug/net6.0/10_Kane.txt
+/Users/benjarsanchez/Desktop/Semestre 9/Diseño Detallado de Software/Proyecto/E2/RawDeal/RawDeal.Tests/bin/Debug/net6.0/11_Mankind.txt
+/Users/benjarsanchez/Desktop/Semestre 9/Diseño Detallado de Software/Proyecto/E2/RawDeal/RawDeal.Tests/bin/Debug/net6.0/12_StoneCold.txt
+/Users/benjarsanchez/Desktop/Semestre 9/Diseño Detallado de Software/Proyecto/E2/RawDeal/RawDeal.Tests/bin/Debug/net6.0/13_Undertaker.txt
+/Users/benjarsanchez/Desktop/Semestre 9/Diseño Detallado de Software/Proyecto/E2/RawDeal/RawDeal.Tests/bin/Debug/net6.0/14_TheRock.txt
+/Users/benjarsanchez/Desktop/Semestre 9/Diseño Detallado de Software/Proyecto/E2/RawDeal/RawDeal.Tests/bin/Debug/net6.0/cards.json
+/Users/benjarsanchez/Desktop/Semestre 9/Diseño Detallado de Software/Proyecto/E2/RawDeal/RawDeal.Tests/bin/Debug/net6.0/superstar.json
+/Users/benjarsanchez/Desktop/Semestre 9/Diseño Detallado de Software/Proyecto/E2/RawDeal/RawDeal.Tests/bin/Debug/net6.0/superstar2.json
+/Users/benjarsanchez/Desktop/Semestre 9/Diseño Detallado de Software/Proyecto/E2/RawDeal/RawDeal.Tests/bin/Debug/net6.0/RawDeal.Tests.dll
+/Users/benjarsanchez/Desktop/Semestre 9/Diseño Detallado de Software/Proyecto/E2/RawDeal/RawDeal.Tests/bin/Debug/net6.0/RawDeal.Tests.pdb
+/Users/benjarsanchez/Desktop/Semestre 9/Diseño Detallado de Software/Proyecto/E2/RawDeal/RawDeal.Tests/obj/Debug/net6.0/RawDeal.Tests.csproj.AssemblyReference.cache
+/Users/benjarsanchez/Desktop/Semestre 9/Diseño Detallado de Software/Proyecto/E2/RawDeal/RawDeal.Tests/obj/Debug/net6.0/RawDeal.Tests.GeneratedMSBuildEditorConfig.editorconfig
+/Users/benjarsanchez/Desktop/Semestre 9/Diseño Detallado de Software/Proyecto/E2/RawDeal/RawDeal.Tests/obj/Debug/net6.0/RawDeal.Tests.AssemblyInfoInputs.cache
+/Users/benjarsanchez/Desktop/Semestre 9/Diseño Detallado de Software/Proyecto/E2/RawDeal/RawDeal.Tests/obj/Debug/net6.0/RawDeal.Tests.AssemblyInfo.cs
+/Users/benjarsanchez/Desktop/Semestre 9/Diseño Detallado de Software/Proyecto/E2/RawDeal/RawDeal.Tests/obj/Debug/net6.0/RawDeal.Tests.csproj.CoreCompileInputs.cache
+/Users/benjarsanchez/Desktop/Semestre 9/Diseño Detallado de Software/Proyecto/E2/RawDeal/RawDeal.Tests/obj/Debug/net6.0/RawDeal.Tests.dll
+/Users/benjarsanchez/Desktop/Semestre 9/Diseño Detallado de Software/Proyecto/E2/RawDeal/RawDeal.Tests/obj/Debug/net6.0/refint/RawDeal.Tests.dll
+/Users/benjarsanchez/Desktop/Semestre 9/Diseño Detallado de Software/Proyecto/E2/RawDeal/RawDeal.Tests/obj/Debug/net6.0/RawDeal.Tests.pdb
