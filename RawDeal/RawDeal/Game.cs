@@ -32,16 +32,32 @@ public class Game
     public void Play()
     {
         if (!CanGameStart()) return;
-        SetTurns();
-        SetTurnsIndex();
-        PlayersFirstDrawOfCards();
+        StartGame();
+        PlayGame();
+        CongratulateWinner();
+    }
+
+    private void PlayGame()
+    {
         while (!IsThereAWinner())
         {
             Turn turn = GetTurn();
             turn.PlayTurn();
             UpdateTurnIndex();
-        }
-        CongratulateWinner();
+        } 
+    }
+
+    private void StartGame()
+    {
+        InitializeTurns();
+        PlayersFirstDrawOfCards();
+    }
+
+    private void InitializeTurns()
+    {
+        SetTurns();
+        SetTurnsIndex();
+        
     }
 
     private Turn GetTurn()
@@ -57,7 +73,7 @@ public class Game
     
     private Turn CreateTurn(Player player, Player opponent)
     {
-        string superstarName = player.Superstar.Name;
+        string superstarName = player.GetSuperstarName();
         if(superstarName == "HHH")
             return new TurnHHH(_view, player, opponent);
         else if(superstarName == "KANE")
@@ -134,20 +150,23 @@ public class Game
      { 
          for(int i = 0; i<numberOfPlayers; i++)
         {
-            string deckFileSelected = _view.AskUserToSelectDeck(_deckFolder);
-            Deck playerDeck = GetDeckFromFile(deckFileSelected);
-            Player newPlayer = CreatePlayer(playerDeck);
-            AddPlayerToGamePlayers(newPlayer);
+            CreateGamePlayer();
             if (!AreThereInvalidDecks()) continue;
             _view.SayThatDeckIsInvalid();
             break;
         }
     }
+
+     private Deck GetDeckFromUser()
+     {
+         string deckFileSelected = _view.AskUserToSelectDeck(_deckFolder);
+         return GetDeckFromFile(deckFileSelected);
+     }
      
     private bool AreThereInvalidDecks()
     {
         foreach(Player player in players)
-            if (!IsDeckValid(player.Deck))
+            if (!IsDeckValid(player.GetDeck()))
                 return true;
         return false;
     }  
@@ -159,9 +178,11 @@ public class Game
         return deckValidation.CheckIfDeckIsValid();
     }
 
-    private Player CreatePlayer(Deck deck)
+    private void CreateGamePlayer()
     {
-        return new Player(deck);
+        Deck playerDeck = GetDeckFromUser();
+        Player newPlayer = new Player(playerDeck);
+        AddPlayerToGamePlayers(newPlayer);
     }
 
     private void AddPlayerToGamePlayers(Player player)
@@ -177,19 +198,31 @@ public class Game
      }
      private Deck CreateDeck(List<string> deckList)
      {
+         int superstarIndexInDeckList = 0;
+         string deckSuperstarName = deckList[superstarIndexInDeckList];
+         List<Card> deckCards = GetDeckCards(deckList);
+         Superstar deckSuperstar = GetDeckSuperstarCard(deckSuperstarName);
+         return new Deck(deckCards, deckSuperstar);;
+     }
+
+     private List<Card> GetDeckCards(IReadOnlyList<string> deckList)
+     {
          List<Card> cards = GetCards();
-         List<Superstar> superstars = GetSuperstars();
          List<Card> deckCards = new List<Card>();
-         Superstar superstar = superstars.Find(s => deckList[0].Contains(s.Name));
          for (int i = 1; i<deckList.Count; i++)
          {
              Card card = cards.Find(c => c.Title == deckList[i]);
              deckCards.Add(card);
-         }
-         Deck deck = new Deck(deckCards, superstar);
-         return deck;
+         }  
+         return deckCards;
      }
-    
+
+     private Superstar GetDeckSuperstarCard(string superstarName)
+     {
+         List<Superstar> superstars = GetSuperstars();
+         return superstars.Find(s => superstarName.Contains(s.Name));
+     }
+
      private List<Card> GetCards()
      {
          string pathCards = Path.Combine("data", "cards.json");
@@ -205,5 +238,5 @@ public class Game
          List<Superstar> superstars = JsonSerializer.Deserialize<List<Superstar>>(jsonString);
          return superstars;
      }
-
+     
 }

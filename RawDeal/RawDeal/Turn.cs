@@ -6,13 +6,13 @@ namespace RawDeal;
 
 public class Turn
 {
-    public View _view;
-    public Player player;
-    public Player opponent;
+    protected View _view;
+    protected Player player;
+    protected Player opponent;
     private bool turnIsOver;
     private const int comeBackMenu = -1;
 
-    public Turn(View view, Player player, Player opponent)
+    protected Turn(View view, Player player, Player opponent)
     {
         _view = view;
         this.player = player;
@@ -29,11 +29,11 @@ public class Turn
             ShowPlayersInfo();
             NextPlay nextPlay = GetNextPlayFromUser();
             if (nextPlay == NextPlay.PlayCard)
-                PlayCard();
+                HandlePlayCard();
             else if (nextPlay == NextPlay.ShowCards)
                 ShowSeeCardsOptions();
             else if (nextPlay == NextPlay.UseAbility)
-                UseAbility();
+                HandleAbility();
             else if (nextPlay == NextPlay.EndTurn)
                 EndTurn();
             else if (nextPlay == NextPlay.GiveUp)
@@ -42,7 +42,7 @@ public class Turn
             if (opponent.IsDead())
                 EndTurn();
         }
-        SetAbilityUsageToAvailable();
+        EnableAbility();
         UpdatePlayersLifeStatus();
     }
 
@@ -57,40 +57,60 @@ public class Turn
         turnIsOver = true;
     }
     
-    public void PlayCard()
+    public void HandlePlayCard()
     {
-        int userCardSelection = GetSelectedPlayIndex();
-        if (userCardSelection == comeBackMenu)
+        int indexOfPlayableCardSelected = GetSelectedPlayIndex();
+        if (indexOfPlayableCardSelected == comeBackMenu)
             return;
-        Card cardPlayed = player.DrawPlayedCardFromHand(userCardSelection);
-        string cardPlayedInfo = GetCardInfo(cardPlayed);
-        player.AddCardToTopOfRingArea(cardPlayed);
-        _view.SayThatPlayerIsTryingToPlayThisCard(player.Superstar.Name, cardPlayedInfo);
+        Card cardToPlay = player.DrawPlayedCardFromHand(indexOfPlayableCardSelected);
+        PlayCard(cardToPlay);
+    }
+
+    private void PlayCard(Card card)
+    {
+        player.AddCardToTopOfRingArea(card);
+        string cardPlayedInfo = GetCardInfo(card);
+        _view.SayThatPlayerIsTryingToPlayThisCard(player.GetSuperstarName(), cardPlayedInfo);
         _view.SayThatPlayerSuccessfullyPlayedACard();
-        int damageAmount = GetDamageAmount(cardPlayed);
-        _view.SayThatOpponentWillTakeSomeDamage(opponent.Superstar.Name, damageAmount);
-        DamageOpponent(damageAmount);
-        int fortitudeDamage = GetDamageFortitude(cardPlayed);
+        ApplyCardEffect(card);
+    }
+
+    private void ApplyCardEffect(Card card)
+    {
+        int damageAmount = GetDamageAmountOfCard(card);
+        HandleDamageTakenByOpponent(damageAmount);
+        int fortitudeDamage = GetDamageFortitude(card);
         player.IncreaseFortitudeRating(fortitudeDamage);
     }
     
     private void UpdatePlayersLifeStatus()
     {
         if (!player.IsThereAnyCardAtArsenal() && opponent.IsDead())
-        {
-            player.SetPlayerAsAlive();
-            opponent.SetPlayerAsDead();
-        }
-        else if (!player.IsThereAnyCardAtArsenal() && !opponent.IsDead())
-        {
-            player.SetPlayerAsDead();
-            opponent.SetPlayerAsAlive();
-        }
+            SetPlayerAsWinner();
+        else if (!player.IsThereAnyCardAtArsenal() && !opponent.IsDead()) 
+            SetOpponentAsWinner();
+    }
+    
+    private void SetPlayerAsWinner()
+    {
+        player.SetPlayerAsAlive();
+        opponent.SetPlayerAsDead();
+    }
+    
+    private void SetOpponentAsWinner()
+    {
+        player.SetPlayerAsDead();
+        opponent.SetPlayerAsAlive();
     }
 
-    public virtual void SetAbilityUsageToAvailable() {}
-    
-    public virtual void UseAbility() {}
+
+
+    public virtual void EnableAbility() {}
+    public virtual void DisableAbility() {}
+
+
+    protected virtual void HandleAbility() {}
+    protected virtual void UseAbility() {}
     
     public void UpdateOpponentLifeStatus()
     {
@@ -113,14 +133,13 @@ public class Turn
 
     public virtual void StartTurnOfPlayer()
     {
-        _view.SayThatATurnBegins(player.Superstar.Name);
+        _view.SayThatATurnBegins(player.GetSuperstarName());
         player.AddCardToHandFromArsenal();
     }
     
-    public int GetDamageAmount(Card cardPlayed)
+    public int GetDamageAmountOfCard(Card cardPlayed)
     {
-        int damageAmount = int.Parse(cardPlayed.Damage) + player.DamageExtra;
-        return damageAmount;
+        return int.Parse(cardPlayed.Damage) + player.GetDamageExtra();;
     }
     
     public int GetDamageFortitude(Card cardPlayed)
@@ -131,38 +150,50 @@ public class Turn
     public int GetSelectedPlayIndex()
     {
         List<Card> playableCards = player.GetPlayableCards();
-        List<string> plays = GetPlays(playableCards);
+        List<string> plays = GetPlayableCardsAsPlays(playableCards);
         int cardIndexSelection = _view.AskUserToSelectAPlay(plays);
         return cardIndexSelection;
     }
     
     public string GetCardInfo(Card card)
     {
-        string cardInfo = GetStrFromCard(card);
+        string cardInfo = GetCardAsStr(card);
         return Formatter.PlayToString(cardInfo, card.Types[0].ToUpper());
     }
-    
-    public virtual void DamageOpponent(int amount)
+
+    public void HandleDamageTakenByOpponent(int damageAmount)
     {
-        for (int i = 1; i <= amount; i++)
+        _view.SayThatOpponentWillTakeSomeDamage(opponent.GetSuperstarName(), damageAmount);
+        for (int currentDamage = 1; currentDamage <= damageAmount; currentDamage++)
         {
             if (!opponent.IsThereAnyCardAtArsenal()) break;
-            Card drawnCard = opponent.DrawCardFromTopOfArsenal();
-            opponent.AddCardToTopOfRingside(drawnCard);
-            string cardToRemoveStr = GetStrFromCard(drawnCard);
-            _view.ShowCardOverturnByTakingDamage(cardToRemoveStr,i, amount);
+            DamageOpponent(currentDamage, damageAmount);
         }
     }
+    
+    protected void DamageOpponent(int currentDamage ,int totalDamage)
+    {
+        Card drawnCard = opponent.DrawCardFromTopOfArsenal();
+        opponent.AddCardToTopOfRingside(drawnCard);
+        string cardToRemoveStr = GetCardAsStr(drawnCard);
+        _view.ShowCardOverturnByTakingDamage(cardToRemoveStr, currentDamage, totalDamage);
+    }
 
-    public List<string> GetPlays(List<Card> playableCards)
-    {   List<string> plays = new List<string>();
+    private static List<string> GetPlayableCardsAsPlays(List<Card> playableCards)
+    {   
+        List<string> plays = new List<string>();
         foreach(Card card in playableCards)
         {
-            string cardInfo = GetStrFromCard(card);
-            string play = Formatter.PlayToString(cardInfo, card.Types[0].ToUpper());
+            string play = GetCardAsPlay(card);
             plays.Add(play);
         }
         return plays;
+    }
+
+    private static string GetCardAsPlay(Card card)
+    {
+        string cardInfo = GetCardAsStr(card);
+        return Formatter.PlayToString(cardInfo, card.Types[0].ToUpper());
     }
     
     public void ShowSeeCardsOptions()
@@ -170,15 +201,15 @@ public class Turn
         List<string> cardStrList = null;
         CardSet userElection = _view.AskUserWhatSetOfCardsHeWantsToSee(); 
         if (userElection == CardSet.Hand)
-            cardStrList = GetStrListFromCardList(player.Hand);
+            cardStrList = GetStrListFromCardList(player.GetHand());
         else if (userElection == CardSet.RingArea)
-            cardStrList = GetStrListFromCardList(player.RingArea);
+            cardStrList = GetStrListFromCardList(player.GetRingArea());
         else if (userElection == CardSet.RingsidePile)
-            cardStrList = GetStrListFromCardList(player.Ringside);
+            cardStrList = GetStrListFromCardList(player.GetRingside());
         else if (userElection == CardSet.OpponentsRingArea)
-            cardStrList = GetStrListFromCardList(opponent.RingArea);
+            cardStrList = GetStrListFromCardList(opponent.GetRingArea());
         else if (userElection == CardSet.OpponentsRingsidePile)
-           cardStrList = GetStrListFromCardList(opponent.Ringside);
+           cardStrList = GetStrListFromCardList(opponent.GetRingside());
         _view.ShowCards(cardStrList);
     }
     
@@ -187,25 +218,24 @@ public class Turn
         List<string> cardStrList = new List<string>();
         foreach (Card card in cardList)
         {
-            string cardStr = GetStrFromCard(card);
+            string cardStr = GetCardAsStr(card);
             cardStrList.Add(cardStr);
         }
         return cardStrList;
     }
-    
-    public string GetStrFromCard(Card card)
+
+    private static string GetCardAsStr(Card card)
     {
-        string cardStr = Formatter.CardToString( card.Title, card.Fortitude,
-            card.Damage, card.StunValue, card.Types, card.Subtypes, card.CardEffect);
-        return cardStr;
+        return Formatter.CardToString( card.Title, card.Fortitude,
+            card.Damage, card.StunValue, card.Types, card.Subtypes, card.CardEffect);;
     }
     
     public void ShowPlayersInfo()
     {
-        PlayerInfo playerInfo = new PlayerInfo(player.Superstar.Name,
-            player.FortitudeRating, player.Hand.Count, player.Arsenal.Count);
-        PlayerInfo opponentInfo = new PlayerInfo(opponent.Superstar.Name, 
-            opponent.FortitudeRating, opponent.Hand.Count, opponent.Arsenal.Count);
+        PlayerInfo playerInfo = new PlayerInfo(player.GetSuperstarName(),
+            player.GetFortitudeRating(), player.GetHandCount(), player.GetArsenalCount());
+        PlayerInfo opponentInfo = new PlayerInfo(opponent.GetSuperstarName(), 
+            opponent.GetFortitudeRating(), opponent.GetHandCount(), opponent.GetArsenalCount());
         _view.ShowGameInfo(playerInfo, opponentInfo);
     }
 

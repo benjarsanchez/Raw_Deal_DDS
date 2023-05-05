@@ -12,6 +12,8 @@ public class TurnHHH : Turn
 
 public class TurnKane : Turn
 {
+    private const int DamageAppliedInAbility = 1;
+    
     public TurnKane(View view, Player player, Player opponent) : base(view, player, opponent)
     {
         _view = view;
@@ -20,12 +22,15 @@ public class TurnKane : Turn
     public override void StartTurnOfPlayer()
     {
         _view.SayThatATurnBegins(player.GetSuperstarName());
-        _view.SayThatPlayerIsGoingToUseHisAbility(player.GetSuperstarName(), player.GetSuperstarAbility());
-        _view.SayThatOpponentWillTakeSomeDamage(opponent.GetSuperstarName(), 1);
-        DamageOpponent(1);
+        UseAbility();
         player.AddCardToHandFromArsenal();
     }
-
+    
+    protected override void UseAbility()
+    {
+        _view.SayThatPlayerIsGoingToUseHisAbility(player.GetSuperstarName(), player.GetSuperstarAbility());
+        HandleDamageTakenByOpponent(DamageAppliedInAbility);
+    }
 }
 
 public class TurnTheRock : Turn
@@ -34,25 +39,45 @@ public class TurnTheRock : Turn
     {
         _view = view;
     }
-    
+
     public override void StartTurnOfPlayer()
     {
-        _view.SayThatATurnBegins(player.GetSuperstarName()); 
-        if (player.IsThereAnyCardAtRingside())
-        {
-            bool useAbility = _view.DoesPlayerWantToUseHisAbility(player.GetSuperstarName());
-            if (useAbility)
-            {
-                int cardIndex = _view.AskPlayerToSelectCardsToRecover(player.GetSuperstarName(), 1,
-                    GetStrListFromCardList(player.Ringside));
-                Card card = player.DrawCardFromRingsideOfIndex(cardIndex);
-                player.AddCardToBottomOfArsenal(card);
-            }
-        }
+        _view.SayThatATurnBegins(player.GetSuperstarName());
+        HandleAbility();
         player.AddCardToHandFromArsenal();
     }
 
-}
+    protected override void HandleAbility()
+    {
+        if (!CanTheRockUseHisAbility()) return;
+        if (DoesUserWantToUseHisAbility())
+            UseAbility();
+    }
+
+    protected override void UseAbility()
+    {
+        int cardIndex = GetCardIndexFromUser();
+        Card card = player.DrawCardFromRingsideOfIndex(cardIndex);
+        player.AddCardToBottomOfArsenal(card);
+    }
+
+    private int GetCardIndexFromUser()
+    {
+        return _view.AskPlayerToSelectCardsToRecover(player.GetSuperstarName(), 1,
+            GetStrListFromCardList(player.GetRingside()));
+    }
+
+    private bool DoesUserWantToUseHisAbility()
+    {
+        return _view.DoesPlayerWantToUseHisAbility(player.GetSuperstarName());
+    }
+
+    private bool CanTheRockUseHisAbility()
+    {
+        return player.IsThereAnyCardAtRingside();
+    }
+
+};
 
 public class TurnUndertaker : Turn
 {
@@ -70,7 +95,7 @@ public class TurnUndertaker : Turn
         return false;
     }
 
-    public override void UseAbility()
+    protected override void HandleAbility()
     {
         _view.SayThatPlayerIsGoingToUseHisAbility(player.GetSuperstarName(), player.GetSuperstarAbility());
         DiscardCardFromHand(player, 2);
@@ -80,7 +105,7 @@ public class TurnUndertaker : Turn
     
     public void RecoverCardFromRingside(Player player, int amount)
     {
-        int cardIndex = _view.AskPlayerToSelectCardsToPutInHisHand(player.GetSuperstarName(), amount, GetStrListFromCardList(player.Ringside));
+        int cardIndex = _view.AskPlayerToSelectCardsToPutInHisHand(player.GetSuperstarName(), amount, GetStrListFromCardList(player.GetRingside()));
         Card recoveredCard = player.DrawCardFromRingsideOfIndex(cardIndex);
         player.AddCardToTopOfHand(recoveredCard);
     }
@@ -89,14 +114,14 @@ public class TurnUndertaker : Turn
     {
         for (int i = amount; i > 0; i--)
         {
-            int cardIndex = _view.AskPlayerToSelectACardToDiscard(GetStrListFromCardList(player.Hand),
+            int cardIndex = _view.AskPlayerToSelectACardToDiscard(GetStrListFromCardList(player.GetHand()),
                 player.GetSuperstarName(), player.GetSuperstarName(), i);
             Card discardedCard = player.DrawCardFromHandOfIndex(cardIndex);
             player.AddCardToTopOfRingside(discardedCard);
         }
     }
     
-    public override void SetAbilityUsageToAvailable()
+    public override void EnableAbility()
     {
         HasUsedAbility = false;
     }
@@ -114,37 +139,56 @@ public class TurnJericho : Turn
 
     public override bool IsAbilityAvailable()
     {
-        if(player.GetHandCount() >= 1 && !HasUsedAbility)
-            return true;
-        return false;
+        return player.GetHandCount() >= 1 && !HasUsedAbility;
     }
 
-    public override void UseAbility()
+    protected override void HandleAbility()
     {
         _view.SayThatPlayerIsGoingToUseHisAbility(player.GetSuperstarName(), player.GetSuperstarAbility());
-        int cardIndex1 = _view.AskPlayerToSelectACardToDiscard(GetStrListFromCardList(player.Hand), player.GetSuperstarName(), player.GetSuperstarName(), 1);
-        Card discardedCard1 = player.DrawCardFromHandOfIndex(cardIndex1);
-        player.AddCardToTopOfRingside(discardedCard1);
-        
-        int cardIndex2 = _view.AskPlayerToSelectACardToDiscard(GetStrListFromCardList(opponent.Hand), opponent.GetSuperstarName(), opponent.GetSuperstarName(), 1);
-        Card discardedCard2 = opponent.DrawCardFromHandOfIndex(cardIndex2);
-        opponent.AddCardToTopOfRingside(discardedCard2);
-        HasUsedAbility = true;
-        
+        UseAbility();
+        DisableAbility();
     }
 
-    public override void SetAbilityUsageToAvailable()
+    protected override void UseAbility()
+    {
+        PlayerRemoveCardFromHand();
+        OpponentRemoveCardFromHand();
+    }
+
+
+    private void PlayerRemoveCardFromHand()
+    {   
+        int cardIndex = _view.AskPlayerToSelectACardToDiscard(GetStrListFromCardList(player.GetHand()), player.GetSuperstarName(), player.GetSuperstarName(), 1);
+        Card discardedCard = player.DrawCardFromHandOfIndex(cardIndex);
+        player.AddCardToTopOfRingside(discardedCard);
+    }
+    
+    private void OpponentRemoveCardFromHand()
+    {
+        int cardIndex = _view.AskPlayerToSelectACardToDiscard(GetStrListFromCardList(opponent.GetHand()), opponent.GetSuperstarName(), opponent.GetSuperstarName(), 1);
+        Card discardedCard = opponent.DrawCardFromHandOfIndex(cardIndex);
+        opponent.AddCardToTopOfRingside(discardedCard);
+    }
+
+    public override void EnableAbility()
     {
         HasUsedAbility = false;
     }
+    
+    private void DisableAbility()
+    {
+        HasUsedAbility = true;
+    }
+    
 }
 
 public class TurnMankind : Turn
 {
+    private const int ExtraDamageReceived = -1;
     public TurnMankind(View view, Player player, Player opponent) : base(view, player, opponent)
     {
         _view = view;
-        opponent.DamageExtra = -1;
+        opponent.SetDamageExtra(ExtraDamageReceived);
     }
     
     public override void StartTurnOfPlayer()
@@ -174,28 +218,49 @@ public class TurnStoneCold : Turn
     
     public override bool IsAbilityAvailable()
     {
-        if(!HasUsedAbility && player.Arsenal.Any())
+        if(!HasUsedAbility && player.IsThereAnyCardAtArsenal())
             return true;
         return false;
     }
 
-    public override void UseAbility()
+    protected override void HandleAbility()
     {
-        Card card = player.DrawCardFromTopOfArsenal();
         _view.SayThatPlayerIsGoingToUseHisAbility(player.GetSuperstarName(), player.GetSuperstarAbility());
-        _view.SayThatPlayerDrawCards(player.GetSuperstarName(), 1);
-        player.AddCardToTopOfHand(card);
-        int cardIndex = _view.AskPlayerToReturnOneCardFromHisHandToHisArsenal(player.GetSuperstarName(),
-            GetStrListFromCardList(player.Hand));
-        Card cardToReturn = player.DrawCardFromHandOfIndex(cardIndex);
-        player.AddCardToBottomOfArsenal(cardToReturn);
-        HasUsedAbility = true;
+        UseAbility();
+        DisableAbility();
+    }
+
+    protected override void UseAbility()
+    {
+        PlayerDrawFirstCardFromArsenalToHand();
+        PlayerDrawCardFromHandToArsenal();
     }
     
-    public override void SetAbilityUsageToAvailable()
+    private void PlayerDrawCardFromHandToArsenal()
+    {
+        int cardIndex = _view.AskPlayerToReturnOneCardFromHisHandToHisArsenal(player.GetSuperstarName(),
+            GetStrListFromCardList(player.GetHand()));
+        Card cardToReturn = player.DrawCardFromHandOfIndex(cardIndex);
+        player.AddCardToBottomOfArsenal(cardToReturn);
+    }
+    
+    private void PlayerDrawFirstCardFromArsenalToHand()
+    {
+        Card card = player.DrawCardFromTopOfArsenal();
+        _view.SayThatPlayerDrawCards(player.GetSuperstarName(), 1);
+        player.AddCardToTopOfHand(card);
+    }
+
+    public override void EnableAbility()
     {
         HasUsedAbility = false;
     }
+    
+    public override void DisableAbility()
+    {
+        HasUsedAbility = true;
+    }
+    
 }
 
 

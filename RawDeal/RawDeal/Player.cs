@@ -5,15 +5,15 @@ using RawDealView;
 
 public class Player
 {
-    public Deck Deck;
-    public List<Card> Hand;
-    public List<Card> Arsenal; 
-    public List<Card> Ringside;
-    public Superstar Superstar;
-    public int FortitudeRating;
-    public List<Card> RingArea;
+    private Deck Deck;
+    private List<Card> Hand;
+    private List<Card> Arsenal; 
+    private List<Card> Ringside;
+    private Superstar Superstar;
+    private int FortitudeRating;
+    private List<Card> RingArea;
     private bool _IsDead;
-    public int DamageExtra;
+    private int DamageExtra;
 
     public Player(Deck deck)
     {
@@ -27,6 +27,39 @@ public class Player
         RingArea = new List<Card>();
         _IsDead = false;
         DamageExtra = 0;
+    }
+    public Deck GetDeck()
+    {
+        return Deck;
+    }
+    
+    public int GetDamageExtra()
+    {
+        return DamageExtra;
+    }
+    
+    public void SetDamageExtra(int damageExtra)
+    {
+        DamageExtra = damageExtra;
+    }
+    
+    public List<Card> GetRingArea()
+    {
+        return RingArea;
+    }
+    
+    public List<Card> GetRingside()
+    {
+        return Ringside;
+    }
+    
+    public int GetFortitudeRating()
+    {
+        return FortitudeRating;
+    }
+    public List<Card> GetHand()
+    {
+        return Hand;
     }
     public bool IsDead()
     {
@@ -59,40 +92,45 @@ public class Player
     
     public Card DrawPlayedCardFromHand(int indexOfPlayableCardSelected)
     {
-        List<Card> playableCards = GetPlayableCards();
-        Card cardSelected = new Card();
-        int counter = 0;
-        for(int i = 0; i < Hand.Count; i++)
-        {
-            if (Hand[i].Title == playableCards[counter].Title)
-            {
-                if (counter == indexOfPlayableCardSelected)
-                {
-                    cardSelected = DrawCardFromHandOfIndex(i);
-                    break;
-                }
-                counter++;
-            }
-        }
+        List<int> playableCardsIndex = GetIndexOfPlayableCards();
+        Card cardSelected = DrawCardFromHandOfIndex(playableCardsIndex[indexOfPlayableCardSelected]);
         return cardSelected;
     }
-    
+
     public bool IsThereAnyCardAtRingside()
     {
         return Ringside.Any();
     }
     
+    public List<int> GetIndexOfPlayableCards()
+    {
+        List<int> indexOfPlayableCards = new List<int>();
+        for(int index = 0; index < Hand.Count; index++)
+        {
+            if (IsCardPlayable(Hand[index]))
+                indexOfPlayableCards.Add(index);
+        }
+        return indexOfPlayableCards;
+    }
+
     public List<Card> GetPlayableCards()
     {
         List<Card> playableCards = new List<Card>();
         foreach (Card card in Hand)
         {
-            if (int.Parse(card.Fortitude) <= FortitudeRating && !IsCardTypeReversal(card))
+            if (IsCardPlayable(card))
                 playableCards.Add(card);
         }
         return playableCards;
     }
-    
+
+    public bool IsCardPlayable(Card card)
+    {
+        if (int.Parse(card.Fortitude) <= FortitudeRating && !IsCardTypeReversal(card))
+            return true;
+        return false;
+    }
+
     public bool IsCardTypeReversal(Card card)
     {
         if (card.Types.Contains("Reversal"))
